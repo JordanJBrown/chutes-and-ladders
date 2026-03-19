@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Shutes and Ladders App</title>
+</head>
+<body class="box-border m-0 bg-linear-to-r from-blue-500 to-green-500">
+
+    <div class="bg-red-50 mt-10 mr-auto ml-auto w-180 p-10 rounded-3xl m-0 border-3">
+    <p class="font-extrabold text-center mb-5 text-3xl">Chutes and Ladders App</p>
+    <img src="\sl.png" class="m-auto mb-5"/>
+   <!--First selection-->
+    <form id="form1" method="post" class="mb-5">
+        <div class="mb-5">
+      <label class="block text-gray-700 mb-2" for="username">
+        In ________ amount of games, what is the minimum number of turns needed to win?
+      </label>
+      <input name="firstInput" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="amount of games">
+    </div>
+         <div class="mb-5"></div>
+        <button type="sumbit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+         Sumbit
+        </button><span id="answer1" class="ml-10 font-bold "></span>
+     </form>
+     <!--Second selection-->
+         <form id="form2" method="post" class="mb-15">
+        <div class="mb-5">
+      <label class="block text-gray-700 mb-2" for="username">
+       What is the minumum number of games to win in ________ amount of turns?
+      </label>
+      <input name="secondInput" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="numer of turns (minimum is 6)">
+    </div>
+               <div class="mb-5"></div>
+        <button id="button2" type="sumbit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+         Sumbit
+        </button><p id="answer2" class="ml-31 font-bold -mt-12 -mb-15"></p></div>
+        <p></p>
+     </form>
+
+</div>
+
+    
+<script src="/Chutes and Ladders.js"></script>
+</body>
+</html>
